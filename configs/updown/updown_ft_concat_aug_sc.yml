@@ -1,0 +1,29 @@
+# base
+caption_model: updown
+input_json: data/cocotalk.json
+input_att_dir: data/cocobu_att
+input_label_h5: data/cocotalk_label.h5
+learning_rate: 0.0005
+scheduled_sampling_start: 0
+use_ft: 1
+# use_box: 1
+# augmentation: uniform
+seq_per_img: 1
+batch_size: 50
+#checkpoint_path: models/updown_ft_concat_aug
+# checkpoint_path: $ckpt_path
+# $start_from
+language_eval: 1
+save_checkpoint_every: 5000
+val_images_use: 5000
+rnn_size: 1000
+input_encoding_size: 1000
+att_feat_size: 2048
+fc_feat_size: 2048
+att_hid_size: 512
+
+train_sample_n: 5
+batch_size: 10
+learning_rate_decay_start: 0
+self_critical_after: 0
+#max_epochs: 60

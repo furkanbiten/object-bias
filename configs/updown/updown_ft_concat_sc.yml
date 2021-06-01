@@ -1,0 +1,8 @@
+_BASE_: updown_ft_concat.yml
+learning_rate: 0.00005
+learning_rate_decay_start: -1
+start_from: models/updown_ft_concat/
+
+checkpoint_path: models/updown_ft_concat_sc/
+self_critical_after: 0
+max_epochs: 50
