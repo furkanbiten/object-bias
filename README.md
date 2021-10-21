@@ -43,8 +43,12 @@ In theory, `SentenceSimplifier` class should be standalone code, meaning it can 
 
 
 ## Running the code
+
 `python tools/train.py --cfg configs/updown/updown_ft_concat_aug.yml --augmentation co-occurence --checkpoint_path models/updown_ft_concat_occur_noise --start_from models/updown_ft_concat/ --max_epochs 60 --save_checkpoint_every 10000`
+
 `python tools/eval.py --dump_images 0 --num_images 5000 --model models/updown_ft_concat_occur_noise/model.pth --infos_path models/updown_ft_concat_occur_noise/infos_.pkl --language_eval 1 --input_att_dir_ft data/ft_frcnn_att`
+
+## Evaluation 
 
 ## Conclusion
 As usual, sorry for the bugs and unnecessary part of the code,
