@@ -218,7 +218,6 @@ class Dataset(data.Dataset):
             replacement_word = wordToReplace
             while replacement_word == pair[0] or replacement_word == wordToReplace:
                 if self.augmentation == 'uniform':
-                    # replacement_word = self.id2class[np.random.choice(80, 1)[0]]
                     replacement_word = np.random.choice(list(self.id2class.values()), 1)[0]
                 elif self.augmentation == 'multinomial':
                     replacement_word = self.inv_multinomial(pair)
@@ -228,14 +227,10 @@ class Dataset(data.Dataset):
                     self.covMatrix = updateCovMatrix(self.covMatrix, set(obj_names), cls_pair, self.class2idMap)
 
             # Using simplified caption
-            # cap_ids = self.replace_words(synonym_pair, replacement_word, simplified_string)
+            cap_ids = self.replace_words(synonym_pair, replacement_word, simplified_string)
             # Using original caption
-            cap_ids = self.replace_words(synonym_pair, replacement_word, caption_string)
-            # simplified_string = re.sub(r"\b{}\b".format(synonym_pair[1]), " {} ".format(replacement_word),
-            #                           simplified_string)
-            # simplified_string = re.sub(r" nt", "nt", simplified_string)
-            # simplified_string = simplified_string.strip()
-            # cap_ids = [int(self.word_to_ix[i]) for i in simplified_string.split()]
+            # cap_ids = self.replace_words(synonym_pair, replacement_word, caption_string)
+
             return cap_ids, obj_ids, wordToReplace, replacement_word, pair
         else:
             return None, None, None, None

@@ -77,6 +77,7 @@ dependencies:
   - ncurses=6.2=h58526e2_4
   - networkx=2.5=py_0
   - ninja=1.10.2=h4bd325d_1
+  - nltk=3.6.5=pyhd8ed1ab_0
   - numpy=1.19.2=py37h54aff64_0
   - numpy-base=1.19.2=py37hfa32c7d_0
   - oauthlib=3.1.1=pyhd8ed1ab_0
@@ -85,6 +86,7 @@ dependencies:
   - openssl=1.1.1l=h7f98852_0
   - packaging=21.0=pyhd8ed1ab_0
   - pathy=0.6.0=pyhd8ed1ab_0
+  - pattern=3.6.0=pyh9f0ad1d_1
   - pillow=8.3.2=py37h0f21c89_0
   - pip=21.3=pyhd8ed1ab_0
   - preshed=3.0.5=py37hcd2ae1e_1
