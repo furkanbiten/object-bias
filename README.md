@@ -1,5 +1,5 @@
 # Reducing Object Hallucination in Image Captioning
-Welcome! In this repo, you can find the code for [our paper](https://arxiv.org/abs/2110.01705). 
+Welcome! In this repo, you can find the code for [our paper](https://arxiv.org/abs/2110.01705) published in WACV 2022. 
 
 ![Object-Bias Model!](./models.jpg)
 
