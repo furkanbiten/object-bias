@@ -1,5 +1,6 @@
 # Reducing Object Hallucination in Image Captioning
 Welcome! In this repo, you can find the code for [our paper](https://arxiv.org/abs/2110.01705). 
+
 ![Object-Bias Model!](https://github.com/furkanbiten/object-bias/blob/master/models.jpg)
 
 ## Creating the environment
