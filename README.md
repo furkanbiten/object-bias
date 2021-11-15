@@ -46,7 +46,7 @@ In theory, `SentenceSimplifier` class should be standalone code, meaning it can 
 Before we talk about running the code, couple of important points on the training procedure. 
 We first train a model with the concatenation of object labels. 
 To do the training with augmentation, we always start from this model weight 
-(the names are updown_ft_concat, aoa_ft_concat, see the [Model Weights](# Model Weights)).
+(the names are updown_ft_concat, aoa_ft_concat, see the [Model Weights](# model-weights)).
 
 So, finally, the exciting staff. To run the code for training, you need to run the command in terminal. Let me first give an example.
 
